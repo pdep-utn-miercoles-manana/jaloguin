@@ -23,5 +23,18 @@ class Chico {
   method tieneMuchosCaramelos() {
     return caramelos > 15
   }
-    
+
+  method comerCaramelos(unaCantidad) {
+  	self.validarCantidadCaramelos(unaCantidad)
+  	caramelos -= unaCantidad
+  }
+  
+  method validarCantidadCaramelos(unaCantidad) {
+  	if (unaCantidad <= caramelos) {
+  	  throw new ChicoException(message = 'No hay mas morfi')
+  	}
+  }
+
 }
+
+class ChicoException inherits Exception {}
