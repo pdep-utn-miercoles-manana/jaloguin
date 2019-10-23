@@ -1,7 +1,8 @@
 class Chico {
 
   var actitud
-  const property elementosDisfraz
+  var caramelos
+  const elementosDisfraz = []
   
   method capacidadDeSusto() {
     return self.sustoDeDisfraz() * actitud
@@ -10,5 +11,17 @@ class Chico {
   method sustoDeDisfraz() {
     return elementosDisfraz.sum { elemento => elemento.poderDeSusto() }
   }
+ 
+  method intentarAsustar(unAdulto) {
+    unAdulto.serAsustadoPor(self)
+  }
+
+  method recibirCaramelos(unosCaramelos) {
+    caramelos += unosCaramelos
+  }
   
+  method tieneMuchosCaramelos() {
+    return caramelos > 15
+  }
+    
 }
