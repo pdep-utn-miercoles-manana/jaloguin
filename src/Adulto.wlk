@@ -3,10 +3,13 @@ class Adulto {
   var cuantosChicosIntentaronAsustarme
   
   method serAsustadoPor(unAsustador) {
+    self.asustarseSiPuedeSerAsustado(unAsustador)
+    self.contarChicoSiCorresponde(unAsustador)
+  }
+		
+  method asustarseSiPuedeSerAsustado(unAsustador) {
     if(self.puedeSerAsustadoPor(unAsustador)) {
       unAsustador.recibirCaramelos(self.cantidadDeCaramelosAEntregar())
-    } else {
-      self.contarChicoSiCorresponde(unAsustador)
     }
   }
   
