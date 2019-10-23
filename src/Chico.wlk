@@ -1,11 +1,14 @@
+import Salud.*
+
 class Chico {
 
-  var actitud
+  var salud = sano
   var caramelos
+  var property actitud
   const elementosDisfraz = []
   
   method capacidadDeSusto() {
-    return self.sustoDeDisfraz() * actitud
+    return self.sustoDeDisfraz() * salud.actitud(self)
   }
   
   method sustoDeDisfraz() {
@@ -26,6 +29,7 @@ class Chico {
 
   method comerCaramelos(unaCantidad) {
   	self.validarCantidadCaramelos(unaCantidad)
+  	salud.comerCaramelos(self, unaCantidad)
   	caramelos -= unaCantidad
   }
   
@@ -33,6 +37,14 @@ class Chico {
   	if (unaCantidad <= caramelos) {
   	  throw new ChicoException(message = 'No hay mas morfi')
   	}
+  }
+  
+  method empachate() {
+  	salud = empachado
+  }
+
+  method poneteEnCama() {
+  	salud = cama
   }
 
 }
