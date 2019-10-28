@@ -1,0 +1,3 @@
+# Jalogüin
+
+Acá dejo el [enunciado del parcial](https://4924d24e-a-62cb3a1a-s-sites.googlegroups.com/site/paradigmasdeprogramacion/Parcial%20-%20Jalogüin.pdf?attachauth=ANoY7crhT1XBD5JWZoncX6kzaeg4OuYCML0qAwyJA-MomzvQHFqGtTUWF1yXZ25LKXicpYIZOAYJt7EavSbG_7GBQWsuFkILRT-cgOGi3LDNWOuoOpOMY1k5NhbPvDhCzrPS0XL5ppw-58BmpcrOGd1y_7SzXvzAJXYWueI-QAqWwY4IjT2POE7Qtp3OQ8mmI1k6fp9g7X0oE0NqIN1p4jrV13v6IVtRgiN-VtWy-4QVn8kPzrL2ooQoe2FbLXzM_o9Y9F_H4x-C&attredirects=0d%3D1)
